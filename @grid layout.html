@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@grid layout</title>
+</head>
+<style>
+    body{
+        color: #fff;
+        font-family: 'Nunito Semibold';
+        text-align: center;
+    }
+    
+
+    #content{
+        display: grid;
+        /* grid-template-columns:repeat(3,1fr) ; */
+        grid-template-columns: 33.3% 33.3% 33.3% ;
+        grid-auto-rows: repeat(150px,auto);
+        grid-template-rows: repeat(3,minmax(150px,auto));
+        grid-row-gap:10px;
+        grid: gap 10px;
+        max-width: 960px;
+        margin: o auto;
+    }
+    
+    #content div{
+        background: #3bbced;
+        padding: 30px;
+    }
+     body{
+        background: rgb(255, 255, 255);
+        text-align: center   }
+      
+#content div:nth-child(even){
+    background: #777;
+
+}
+footer{
+    grid-column:span 3;
+    background: #a56dda;
+}
+ 
+</style>
+<body>
+    <div id="content">
+        <div>UYO-NO:10 GIBBS ST.</div>
+        <div> VICTORIA ILAND,LAGOS</div>
+        <div>VICTORIA ILAND,LAGOS</div>
+        <div>VICTORIA ILAND,LAGOS</div>
+        <div>UYO-NO:10 GIBBS ST.</div>
+        <div>UYO-NO:10 GIBBS ST.</div>
+        <div>UYO-NO:10 GIBBS ST.</div>
+        <div>UYO-NO:10 GIBBS ST.</div>
+        <div>UYO-NO:10 GIBBS ST</div>
+
+    </div>
+</body>
+</html>
+<!-- <body>
+    <h1>GRID LAYOUT</h1>
+    <div id="content">
+       <header>Header</header>
+       <div id="middle">
+       <main>Main</main>
+       <div id="sidebar">
+       <aside>Aside</aside>
+       <nav>Nav</nav>
+       <footer>Footer</footer>
+
+    </div>
+    </div> -->
+    
